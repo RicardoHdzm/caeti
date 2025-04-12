@@ -326,6 +326,9 @@ hr {
   height: fit-content;
   padding: 10px;
   text-transform: uppercase;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .top-space{
@@ -348,21 +351,13 @@ input, .form-control {
   width: 100%;
 }
 
-input:focus, .form-control:focus,
-input:active, .form-control:active {
-  background-color: rgba(0,0,0, 0.8);
-  box-shadow: none!important;
-  border-color: #008cff;
-  color: #fff;
-}
-
 
 .form-control:focus, .form-control:active{
   background-color: rgba(0,0,0, 0.8);
   outline: none;
   box-shadow: none;
-  color: #fff;
-  border-color: #076fc2;
+  color: #ff8800;
+  border-color: #ff8800;
 }
 
 .form-border{
@@ -405,6 +400,10 @@ textarea{
   transform: translateY(-5px);
 }
 
+.centering{
+  text-align: center;
+}
+
 /* SCREEN */
 
 /* Tablets (768px - 1024px) */
@@ -424,11 +423,15 @@ textarea{
   }
 
   body{
-    text-align: center;
+    text-align: justify;
   }
 
   .navbar{
     background-color: rgba(0, 0, 0, .8);
+  }
+
+  .centering{
+    text-align: justify;
   }
 
 
@@ -438,11 +441,11 @@ textarea{
 @media only screen and (max-width: 767px) {
 
 
-  h1, h2 {
+  h1, h2, h3 {
     font-size: 2rem;
   }
 
-  h3, h4, p {
+  h4, p {
     font-size: 1.2rem;
   }
 
@@ -450,18 +453,18 @@ textarea{
     font-size: 0.8rem;
   }
 
-  .fa-brands{
-    font-size: 2.5rem;
+  .logo-home{
+    width: 100%;
   }
 }
 
 /* Teléfonos medianos (375px - 424px) */
 @media only screen and (max-width: 424px) {
-  h1, h2 {
+  h1, h2, h3 {
     font-size: 1.25rem;
   }
 
-  h3, h4, p {
+  h4, p {
     font-size: 0.8rem;
   }
 
@@ -541,4 +544,35 @@ textarea{
 .owl-nav button.owl-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: #008cff!important;
+}
+
+#whappBtn {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 2.5rem;
+  z-index: 90;
+  outline: none; 
+  background-color: #000; 
+  cursor: pointer;
+  font-weight: bolder;
+  border-color: #fff!important;
+  border: solid;
+  border-width: .25rem;
+  transition: 0.5s ease;
+  border-radius: 100%;
+  padding: 1.2rem!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.5rem #000);
+}
+
+#whappBtn:hover {
+  background-color: #ff8800;
+  transform: translateY(-.5rem);
+}
+
+.whapp{
+  width: 3rem;
+  pointer-events: none;
 }
