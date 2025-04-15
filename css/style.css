@@ -13,7 +13,7 @@ body {
 
 ::selection {
   color: #fff;
-  background:#008cff;
+  background:#083c84;
 }
 
 /* RESET */
@@ -117,13 +117,12 @@ p{
 
 .gradient-text {
   background: linear-gradient(45deg,
-    #072d89,   /* azul profundo */
-    #0d6efd,   /* azul fuerte Bootstrap */
-    #008cff,   /* azul vibrante */
-    #00bfff,   /* azul cielo brillante */
-    #00e5ff,   /* cian neón */
-    #076fc2,   /* tu azul base */
-    #00aaff    /* azul celeste intenso */
+    #021d42,   /* azul muy oscuro (casi negro azulado) */
+    #083c84,   /* color base */
+    #0b468f,   /* azul un poco más claro */
+    #15549f,   /* azul medio suave */
+    #083c84,   /* vuelta al base */
+    #021d42    /* cierra con profundidad */
   );
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -136,13 +135,12 @@ p{
 
 .gradient-text2 {
   background: linear-gradient(45deg,
-    #246160,   /* color base */
-    #2f8e8b,   /* teal más claro */
-    #41bfbf,   /* aqua medio */
-    #67dcd9,   /* aqua suave brillante */
-    #41bfbf,   /* vuelta al aqua medio */
-    #2f8e8b,   /* teal claro */
-    #246160    /* base otra vez */
+    #7a3e00,   /* naranja quemado oscuro */
+    #b85715,   /* naranja óxido */
+    #d96f1a,   /* naranja medio tostado */
+    #e97c3a,   /* naranja brillante pero sobrio */
+    #b85715,   /* repetimos para balancear */
+    #7a3e00    /* cierra con profundidad */
   );
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -233,10 +231,10 @@ p{
 
 /* BUTTONS */
 .btn {
-  background-color:#008cff;
+  background-color:#083c84;
   font-size: 1.2rem;
   font-weight: bolder;
-  border: solid thin#008cff;
+  border: solid thin#083c84;
   border-radius: 2px;
   color: #fff;
   padding: 10px;
@@ -371,7 +369,7 @@ input, .form-control {
   outline: none;
   box-shadow: none;
   color: #000;
-  border-color:#008cff;
+  border-color:#083c84;
 }
 
 .form-border{
@@ -558,7 +556,7 @@ textarea{
 .owl-nav button.owl-prev:hover,
 .owl-nav button.owl-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  color:#008cff!important;
+  color:#083c84!important;
 }
 
 #whappBtn {
@@ -583,7 +581,7 @@ textarea{
 }
 
 #whappBtn:hover {
-  background-color:#008cff;
+  background-color:#083c84;
   border-color:#fff!important;
   transform: translateY(-.5rem);
 }
