@@ -334,7 +334,8 @@ hr {
 }
 
 .copy{
-  background-color: whitesmoke;
+  background-color: #000;
+  color: #fff;
   font-size: .7rem;
   height: fit-content;
   padding: 10px;
@@ -369,7 +370,7 @@ input, .form-control {
   background-color: rgba(0,0,0, 0.1);
   outline: none;
   box-shadow: none;
-  color: #ff8800;
+  color: #000;
   border-color:#008cff;
 }
 
