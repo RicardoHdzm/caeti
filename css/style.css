@@ -438,8 +438,8 @@ textarea{
     text-align: justify;
   }
 
-  .navbar{
-    background-color: rgba(0, 0, 0, .8);
+  .navbar.light{
+    background-color: #000!important;
   }
 
   .centering{
