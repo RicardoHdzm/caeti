@@ -1,17 +1,19 @@
 /* GLOBALS */
 body {
-  font-family: "Oxanium", sans-serif;
-  color: #fff;
-  background-color: #000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23080808' fill-opacity='0.5' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(180,960,495)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23EEEEEE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='2000' height='1666.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.02'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
   scroll-behavior: smooth;
   background-attachment: fixed;
   overflow-x: hidden;
 }
 
 ::selection {
-  color: #000;
-  background: #fff;
+  color: #fff;
+  background:#008cff;
 }
 
 /* RESET */
@@ -38,6 +40,8 @@ img{
 
 .navicon{
   width: 10rem;
+  filter: invert(100%);
+  transition: .5s;
 }
 
 .logo-home{
@@ -51,7 +55,7 @@ h1{
   font-size: 8.5rem;
   font-weight: bolder;
   letter-spacing: 2px;
-  color: #fff;
+  color: #000;
 }
 
 .caeti {
@@ -79,7 +83,7 @@ video{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  opacity: 75%;
+  opacity: 50%;
   z-index: 0;
   pointer-events: none;
 }
@@ -87,7 +91,7 @@ video{
 h2 {
   font-size: 4.5rem;
   font-weight: bolder;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -95,21 +99,20 @@ h2 {
 h3 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
 .caeti p{
-
   font-size: 1.4rem;
   font-weight: 500;
   color: #fff;
 }
 
 p{
-  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
+  color: #0c0c0c;
 }
 
 .gradient-text {
@@ -133,13 +136,13 @@ p{
 
 .gradient-text2 {
   background: linear-gradient(45deg,
-    #7b2d00,   /* naranja oscuro quemado */
-    #fd7e14,   /* naranja Bootstrap */
-    #ff8800,   /* naranja vibrante */
-    #ffaa00,   /* naranja ámbar */
-    #ffc300,   /* amarillo intenso */
-    #e06c00,   /* naranja tostado */
-    #ff9900    /* naranja cálido */
+    #246160,   /* color base */
+    #2f8e8b,   /* teal más claro */
+    #41bfbf,   /* aqua medio */
+    #67dcd9,   /* aqua suave brillante */
+    #41bfbf,   /* vuelta al aqua medio */
+    #2f8e8b,   /* teal claro */
+    #246160    /* base otra vez */
   );
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -171,7 +174,7 @@ p{
 
 /* LINKS */
 .nav-link {
-  color: #F1F7EE;
+  color: #fff;
   margin-top: 10px;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -181,7 +184,11 @@ p{
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
-  color: #fff;
+  color: #fff; 
+  font-weight: bolder;
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+  text-decoration-thickness: 2px;
 }
 
 .navbar-nav .nav-link.active {
@@ -226,10 +233,10 @@ p{
 
 /* BUTTONS */
 .btn {
-  background-color: transparent;
+  background-color:#008cff;
   font-size: 1.2rem;
   font-weight: bolder;
-  border: solid thin #fff;
+  border: solid thin#008cff;
   border-radius: 2px;
   color: #fff;
   padding: 10px;
@@ -238,13 +245,20 @@ p{
   text-transform: uppercase;
 }
 
+.caeti .btn{
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
 option{
   background-color: rgba(0, 0, 0, .9)!important;
 }
 
 .btn:hover {
-  color: #ff8800;
-  border-color: #ff8800;
+  color: #fff;
+  border-color: #0062b3;
+  background-color: #0062b3;
 }
 
 .btn:focus, .btn:active {
@@ -263,7 +277,7 @@ option{
 
 .social-icon {
   font-size: 2rem;
-  color: #fff;
+  color: #000;
   transition: 0.2s;
   padding: 0 1.6rem 0 2rem;
 }
@@ -293,7 +307,7 @@ option{
   height: fit-content;
   text-align: center;
   background-color: #000;
-  color: #fff;
+  color: #000;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -320,7 +334,7 @@ hr {
 }
 
 .copy{
-  background-color: #000;
+  background-color: whitesmoke;
   font-size: .7rem;
   height: fit-content;
   padding: 10px;
@@ -343,24 +357,24 @@ small{
 input, .form-control {
   margin-top: 10px;
   padding: 10px;
-  color: #fff;
-  background-color: rgba(0,0,0, 0.8);
-  border: thin solid #fff;
+  color: #000;
+  background-color: rgba(0,0,0, 0.1);
+  border: thin solid transparent;
   border-radius: .25rem;
   width: 100%;
 }
 
 
 .form-control:focus, .form-control:active{
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.1);
   outline: none;
   box-shadow: none;
   color: #ff8800;
-  border-color: #ff8800;
+  border-color:#008cff;
 }
 
 .form-border{
-  border: thin solid #fff;
+  border: thin solid transparent;
 }
 
 
@@ -379,7 +393,7 @@ textarea{
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -489,6 +503,7 @@ textarea{
 
 .card{
   background-color: transparent;
+  border: none;
 }
 
 .card-tittle{
@@ -504,10 +519,10 @@ textarea{
 }
 
 .card-img-top {
-  height: 20rem; 
+  height: 18rem; 
   object-fit: cover;
-  border: solid thin;
-  border-color: #fff;
+  border: solid thin transparent;
+  border-radius: .5rem;
 }
 
 
@@ -529,7 +544,7 @@ textarea{
 .owl-nav button.owl-prev,
 .owl-nav button.owl-next {
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  color: white!important;
+  color: #000!important;
   font-size: 2.5rem!important; /* Tamaño de ícono/texto */
   width: 50px;
   height: 50px;
@@ -542,12 +557,12 @@ textarea{
 .owl-nav button.owl-prev:hover,
 .owl-nav button.owl-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  color: #008cff!important;
+  color:#008cff!important;
 }
 
 #whappBtn {
   position: fixed;
-  bottom: 3.5rem;
+  bottom: 4.5rem;
   right: 2.5rem;
   z-index: 90;
   outline: none; 
@@ -563,15 +578,34 @@ textarea{
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 0.5rem #000);
+  filter: drop-shadow(0 0 0.2rem #000);
 }
 
 #whappBtn:hover {
-  background-color: #ff8800;
+  background-color:#008cff;
+  border-color:#fff!important;
   transform: translateY(-.5rem);
 }
 
 .whapp{
   width: 3rem;
   pointer-events: none;
+}
+
+.navbar.light {
+  background-color: transparent;
+  transition: background-color ease;
+}
+
+.navbar.dark {
+  background-color: #000;
+  transition: background-color ease;
+}
+
+.navbar.dark .nav-link{
+  color: #fff;
+}
+
+.navbar.dark .navicon{
+  width: 8rem;
 }
