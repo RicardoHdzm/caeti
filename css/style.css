@@ -1,4 +1,9 @@
 /* GLOBALS */
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
@@ -10,6 +15,8 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+
+
 
 ::selection {
   color: #fff;
@@ -444,9 +451,21 @@ textarea{
     position: relative;
   }
 
+  .navbar.dark .navicon{
+    width: 8rem!important;
+  }
+
+  .navbar.light .navicon{
+    width: 8rem!important;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
+
+  .logo-home{
+    width: 70%;
+  }
 
   .caeti h1, h1, h2, h3 {
     font-size: 2rem;
@@ -525,6 +544,7 @@ textarea{
   background-color: rgba(0, 0, 0, 0.8);
   color:#083c84!important;
 }
+
 
 #whappBtn {
   position: fixed;
