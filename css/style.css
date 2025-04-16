@@ -299,14 +299,6 @@ option{
   height: fit-content;
 }
 
-.footer {
-  height: fit-content;
-  text-align: center;
-  background-color: #000;
-  color: #000;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 
 .footer h2{
   color: #e8e4d8;
@@ -423,21 +415,17 @@ textarea{
     font-size: 3rem;
   }
 
-  h3, h4, p, .caeti p, .btn{
+  h3, h4{
     font-size: 2.5rem;
   }
 
   p, .caeti p, .btn{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .section-n{
     height: fit-content;
     margin-bottom: 5rem;
-  }
-
-  body{
-    text-align: justify;
   }
 
   .navbar.light{
@@ -450,6 +438,30 @@ textarea{
 
   .logo-home{
     width: 80%;
+  }
+
+  .copy{
+    position: relative;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .caeti h1, h1, h2, h3 {
+    font-size: 2rem;
+  }
+
+  h3, h4{
+    font-size: 1.5rem;
+  }
+
+  p, .caeti p, .btn{
+    font-size: 1rem;
+  }
+
+  body{
+    text-align: justify;
   }
 
 }
