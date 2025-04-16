@@ -47,7 +47,6 @@ img{
 
 .navicon{
   width: 10rem;
-  filter: invert(100%);
   transition: .5s;
 }
 
@@ -178,7 +177,7 @@ p{
 
 /* LINKS */
 .nav-link {
-  color: #000;
+  color: #083c84;
   margin-top: 10px;
   font-size: 1.2rem;
   font-weight: bolder;
