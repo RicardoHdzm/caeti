@@ -47,6 +47,7 @@ img{
 
 .navicon{
   width: 10rem;
+  filter: invert(100%);
   transition: .5s;
 }
 
@@ -177,7 +178,7 @@ p{
 
 /* LINKS */
 .nav-link {
-  color: #fff;
+  color: #000;
   margin-top: 10px;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -187,15 +188,12 @@ p{
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
-  color: #fff; 
+  color: #083c84; 
   font-weight: bolder;
-  text-decoration: underline;
-  text-underline-offset: .5rem;
-  text-decoration-thickness: 2px;
 }
 
 .navbar-nav .nav-link.active {
-  color: #ff8800; 
+  color: #083c84; 
   font-weight: bolder;
   text-decoration: underline;
   text-underline-offset: .5rem;
@@ -204,7 +202,7 @@ p{
 
 /* NAVBAR */
 .navbar {
-  background-color: transparent;
+  background-color: #fff;
   z-index: 3;
 }
 
@@ -215,7 +213,7 @@ p{
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
@@ -393,11 +391,11 @@ textarea{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e8e4d8;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e8e4d8;
+  background: #080808;
 }
 
 .marca{
@@ -435,10 +433,6 @@ textarea{
     margin-bottom: 5rem;
   }
 
-  .navbar.light{
-    background-color: #000!important;
-  }
-
   .centering{
     text-align: justify;
   }
@@ -449,14 +443,6 @@ textarea{
 
   .copy{
     position: relative;
-  }
-
-  .navbar.dark .navicon{
-    width: 8rem!important;
-  }
-
-  .navbar.light .navicon{
-    width: 8rem!important;
   }
 
 }
@@ -576,22 +562,4 @@ textarea{
 .whapp{
   width: 3rem;
   pointer-events: none;
-}
-
-.navbar.light {
-  background-color: transparent;
-  transition: background-color ease;
-}
-
-.navbar.dark {
-  background-color: #000;
-  transition: background-color ease;
-}
-
-.navbar.dark .nav-link{
-  color: #fff;
-}
-
-.navbar.dark .navicon{
-  width: 8rem;
 }

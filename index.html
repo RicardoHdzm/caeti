@@ -58,7 +58,7 @@
         </div>
     </nav>
     
-    <section id="home" data-nav-color="light" class="caeti">
+    <section id="home" class="caeti">
         <video playsinline autoplay muted loop>
             <source src="assets/video/home.mp4" type="video/mp4"></source>
         </video>
@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <section id="nosotros" data-nav-color="dark" class="section-n p-5">
+    <section id="nosotros" class="section-n p-5">
         <div class="row h-100 justify-content-center" data-aos="fade-in">
          <div class="row my-auto">
             <div class="col-12">
@@ -93,7 +93,7 @@
         </div>
     </section>
 
-    <section id="socios" data-nav-color="dark" class="section-n">
+    <section id="socios" class="section-n">
         <div class="row h-100 justify-content-center" data-aos="fade-in">
             <div class="col-12 col-xxl-6 my-auto">
              <div class="text-center px-5"><h3>La asociación es parte de</h3><h2><span class="gradient-text">Nuestro ADN</span></h2></div>
@@ -113,7 +113,7 @@
 </section>
 
 
-<section id="servicios" data-nav-color="dark" class="section-n d-flex align-items-center min-vh-100">
+<section id="servicios" class="section-n d-flex align-items-center min-vh-100">
     <div class="container my-5" data-aos="fade-in">
         <div class="row justify-content-center">
             <div class="col-12 text-center my-5">
@@ -166,7 +166,7 @@
 </section>
 
 
-<section id="contacto" data-nav-color="dark" class="section-n">
+<section id="contacto" class="section-n">
     <div class="row h-100 justify-content-center" data-aos="fade-in">
         <div class="col-12 col-xxl-4 my-auto px-5">
             <h3>¿Dudas? Podemos</h3><h2><span class="gradient-text">Ayudarlo</span></h2>
@@ -223,26 +223,6 @@
     <script>
         AOS.init({
             duration: 2000,
-        });
-    </script>
-
-    <script>
-        const navbar = document.getElementById('Navbar');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const color = entry.target.getAttribute('data-nav-color');
-                    navbar.classList.remove('light', 'dark');
-                    navbar.classList.add(color);
-                }
-            });
-        }, {
-        threshold: 0.6 // Detecta cuando el 60% de la sección está visible
-    });
-
-        document.querySelectorAll('section[data-nav-color]').forEach(section => {
-            observer.observe(section);
         });
     </script>
 
