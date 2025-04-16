@@ -1,17 +1,16 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recogemos los datos del formulario
-    $name = htmlspecialchars($_POST['name']); // Para evitar problemas con caracteres especiales
+    $name = htmlspecialchars($_POST['name']);
+    $company = htmlspecialchars($_POST['company']);
     $email = htmlspecialchars($_POST['email']);
     $phone = htmlspecialchars($_POST['phone']);
-    $tema = htmlspecialchars($_POST['tema']);
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
-    // Dirección de correo a la que se enviará el mensaje
-    $para = "jrhm95@gmail.com";  // Reemplaza con tu dirección de correo
+    $para = "contacto@caeti.com.mx";  // 
 
     // Asunto del correo
-    $asunto = "Mensaje: $tema";
+    $asunto = "Mensaje: $company";
 
     // Cuerpo del correo
     $cuerpo = "Nombre: $nombre\nCorreo electrónico: $email\nTeléfono: \n$phone\nMensaje: \n$mensaje";

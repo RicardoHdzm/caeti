@@ -419,11 +419,15 @@ textarea{
 /* Tablets (768px - 1024px) */
 @media only screen and (max-width: 1024px) {
 
-  .caeti h1, h1, h2 {
-    font-size: 3.75rem;
+  .caeti h1, h1, h2, h3 {
+    font-size: 3rem;
   }
 
   h3, h4, p, .caeti p, .btn{
+    font-size: 2.5rem;
+  }
+
+  p, .caeti p, .btn{
     font-size: 1rem;
   }
 
@@ -444,59 +448,12 @@ textarea{
     text-align: justify;
   }
 
-
-}
-
-/* Teléfonos grandes (425px - 767px) */
-@media only screen and (max-width: 767px) {
-
-
-  h1, h2, h3 {
-    font-size: 2rem;
-  }
-
-  h4, p {
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-  }
-
   .logo-home{
-    width: 100%;
+    width: 80%;
   }
+
 }
 
-/* Teléfonos medianos (375px - 424px) */
-@media only screen and (max-width: 424px) {
-  h1, h2, h3 {
-    font-size: 1.25rem;
-  }
-
-  h4, p {
-    font-size: 0.8rem;
-  }
-
-  .btn{
-    font-size: 0.75rem;
-  }
-}
-
-/* Teléfonos pequeños (hasta 374px) */
-@media only screen and (max-width: 374px) {
-  h1, h2 {
-    font-size: 1.1rem;
-  }
-
-  h3, h4, p {
-    font-size: 0.8rem;
-  }
-
-  .btn {
-    font-size: 0.7rem;
-  }
-}
 
 .card{
   background-color: transparent;
