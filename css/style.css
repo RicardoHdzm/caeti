@@ -40,13 +40,11 @@ img{
 
 .navicon{
   width: 10rem;
-  filter: invert(100%);
   transition: .5s;
 }
 
 .logo-home{
   width: 50%;
-  filter: invert(100%);
 }
 
 /* FONTS */
