@@ -511,12 +511,13 @@ textarea{
 
 
 .owl-nav {
-  position: absolute;
-  width: 100%;
-  transform: translateY(-50%);
   display: flex;
-  justify-content: center;
-  pointer-events: none; /* evita que tape clics */
+  justify-content: center; /* centrado horizontal */
+  gap: 2rem; /* espacio entre flechas */
+  position: absolute;
+  bottom: -40px; /* ajusta según necesidad */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Permite clic en los botones */
@@ -529,8 +530,8 @@ textarea{
 .owl-nav button.owl-next {
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
   color: #000!important;
-  font-size: 2.5rem!important; /* Tamaño de ícono/texto */
-  width: 50px;
+  font-size: 2rem!important; /* Tamaño de ícono/texto */
+  width: 100px;
   height: 50px;
   border-radius: 50%;
   border: none;
@@ -576,3 +577,15 @@ textarea{
   width: 3rem;
   pointer-events: none;
 }
+
+.owl-carousel-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.owl-carousel {
+  display: inline-block;
+}
+
