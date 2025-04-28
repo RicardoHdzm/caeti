@@ -16,8 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 ::selection {
   color: #fff;
   background:#083c84;
@@ -40,7 +38,7 @@ img{
 }
 
 .partners{
-  width: 10rem!important;
+  width: 8rem!important;
   height: auto!important;
   /* filter: grayscale(100%) brightness(100%)!important; */
 }
@@ -293,9 +291,9 @@ option{
 
 .owl-carousel .item {
   display: flex;
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  align-items: center;     /* Centra las imágenes verticalmente */
-  height: 100px;           /* Define una altura fija para los items */
+  justify-content: center; 
+  align-items: center;    
+  height: 100px;       
 }
 
 
@@ -427,7 +425,7 @@ textarea{
     font-size: 1.5rem;
   }
 
-    .caeti{
+  .caeti{
     height: fit-content;
     padding-bottom: 10rem!important;
     padding-top: 15rem!important;
@@ -435,8 +433,8 @@ textarea{
 
   .section-n{
     height: fit-content;
-    margin-top: 2.5rem!important;
-    margin-bottom: 2.5rem!important;
+    margin-top: 10rem!important;
+    margin-bottom: 10rem!important;
   }
 
   .centering{
@@ -451,7 +449,66 @@ textarea{
     position: relative;
   }
 
+  section {
+    scroll-margin-top: 8.5rem; /* Ajuste de desplazamiento para el navbar */
+  }
+
 }
+
+@media only screen and (max-width: 1400px) {
+
+  .caeti{
+    height: fit-content;
+    padding-bottom: 5rem!important;
+    padding-top: 10rem!important;
+  }
+
+  .logo-home{
+    width: 35%;
+  }
+
+  .navicon{
+    width: 7rem;
+  }
+
+
+  .caeti p{
+    font-size: 1rem;
+  }
+
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+
+  p, .btn{
+    font-size: 1rem;
+  }
+
+  .card-img-top{
+    height: 12rem!important;
+  }
+
+  .card-tittle{
+    font-size: 1rem!important;
+  }
+
+  .card-text{
+    font-size: .8rem!important;
+  }
+
+}
+
+
 
 @media only screen and (max-width: 767px) {
 
@@ -476,10 +533,10 @@ textarea{
   }
 
   #whappBtn {
-  position: fixed;
-  bottom: 2.5rem!important;
-  right: 2.5rem;
-}
+    position: fixed;
+    bottom: 2.5rem!important;
+    right: 2.5rem;
+  }
 
 }
 
@@ -586,5 +643,54 @@ textarea{
 
 .owl-carousel {
   display: inline-block;
+}
+
+@media (max-width: 1400px) {
+  .full-screen-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .full-screen-navbar.collapsing {
+    transition: none;
+    height: 100vh !important;
+  }
+
+  .full-screen-navbar .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.backdrop {
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(5px); 
+  transition: backdrop-filter 0.3s ease-in-out; 
+}
+
+.close-navbar-btn {
+  background: transparent;
+  border: none;
+  font-size: .8rem;
+  color: #0d3d84;
+  cursor: pointer;
+  padding: 50px;
+  font-weight: bolder;
+}
+
+.close-navbar-btn:hover {
+  color: #d54426;
 }
 
