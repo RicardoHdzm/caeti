@@ -542,7 +542,7 @@ textarea{
 
   #whappBtn {
     position: fixed;
-    bottom: 2.5rem!important;
+    bottom: 2.5rem;
     right: 2.5rem;
   }
 
@@ -612,7 +612,7 @@ textarea{
 
 #whappBtn {
   position: fixed;
-  bottom: 3.5rem;
+  bottom: 2.5rem;
   right: 2.5rem;
   z-index: 90;
   outline: none; 
