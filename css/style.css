@@ -506,6 +506,14 @@ textarea{
     font-size: .8rem!important;
   }
 
+  #contacto h2{
+    text-align: center;
+  }
+
+  #contacto h3{
+    text-align: center;
+  }
+
 }
 
 
