@@ -450,7 +450,7 @@ textarea{
   }
 
   section {
-    scroll-margin-top: 8.5rem; /* Ajuste de desplazamiento para el navbar */
+    scroll-margin-top: 12rem;
   }
 
 }
