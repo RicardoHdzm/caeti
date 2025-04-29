@@ -542,7 +542,7 @@ textarea{
 
   #whappBtn {
     position: fixed;
-    bottom: 2.5rem;
+    bottom: 2.5rem!important;
     right: 2.5rem;
   }
 
@@ -612,7 +612,7 @@ textarea{
 
 #whappBtn {
   position: fixed;
-  bottom: 2.5rem;
+  bottom: 3rem;
   right: 2.5rem;
   z-index: 90;
   outline: none; 
@@ -653,7 +653,7 @@ textarea{
   display: inline-block;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .full-screen-navbar {
     position: fixed;
     top: 0;
