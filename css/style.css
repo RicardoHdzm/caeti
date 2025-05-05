@@ -44,7 +44,7 @@ img{
 }
 
 .navicon{
-  width: 10rem;
+  width: 8rem;
   transition: .5s;
 }
 
@@ -107,13 +107,13 @@ h3 {
 }
 
 .caeti p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
 }
 
 p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #0c0c0c;
 }
@@ -177,7 +177,7 @@ p{
 .nav-link {
   color: #083c84;
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bolder;
   text-transform: uppercase;
   transition: .5s;
@@ -388,11 +388,11 @@ textarea{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #083c84;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #080808;
+  background: #083c84;
 }
 
 .marca{
@@ -419,10 +419,6 @@ textarea{
 
   h3, h4{
     font-size: 2.5rem;
-  }
-
-  p, .caeti p, .btn{
-    font-size: 1.5rem;
   }
 
   .caeti{
@@ -486,7 +482,7 @@ textarea{
   }
 
   h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   h3{
@@ -538,11 +534,11 @@ textarea{
     width: 70%;
   }
 
-  .caeti h1, h1, h2, h3 {
+  .caeti h1{
     font-size: 2rem;
   }
 
-  h3, h4{
+  h2, h3, h4{
     font-size: 1.5rem;
   }
 
@@ -630,7 +626,7 @@ textarea{
   right: 2.5rem;
   z-index: 90;
   outline: none; 
-  background-color: #000; 
+  background-color: #083c84; 
   cursor: pointer;
   font-weight: bolder;
   border-color: #fff!important;
@@ -646,7 +642,7 @@ textarea{
 }
 
 #whappBtn:hover {
-  background-color:#083c84;
+  background-color:#0062b3;
   border-color:#fff!important;
   transform: translateY(-.5rem);
 }
