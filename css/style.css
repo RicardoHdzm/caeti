@@ -445,6 +445,10 @@ textarea{
     position: relative;
   }
 
+  #whappBtn {
+    bottom: 2rem!important;
+  }
+
   section {
     scroll-margin-top: 12rem;
   }
@@ -468,8 +472,8 @@ textarea{
   }
 
   section {
-  scroll-margin-top: 150px; /* Ajuste de desplazamiento para el navbar */
-}
+    scroll-margin-top: 150px; /* Ajuste de desplazamiento para el navbar */
+  }
 
 
   .caeti p{
