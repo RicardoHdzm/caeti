@@ -476,6 +476,15 @@ textarea{
     font-size: 1rem;
   }
 
+  .whapp{
+    width: 1.5rem!important;
+  }
+
+  #whappBtn {
+    bottom: 1rem!important;
+    right: 1rem;
+  }
+
 
   h1{
     font-size: 2rem;
@@ -550,12 +559,6 @@ textarea{
     text-align: justify;
   }
 
-  #whappBtn {
-    position: fixed;
-    bottom: 2.5rem!important;
-    right: 2.5rem;
-  }
-
 }
 
 
@@ -623,8 +626,8 @@ textarea{
 
 #whappBtn {
   position: fixed;
-  bottom: 3rem;
-  right: 2.5rem;
+  bottom: 2.8rem;
+  right: 1.5rem;
   z-index: 90;
   outline: none; 
   background-color: #083c84; 
@@ -649,7 +652,7 @@ textarea{
 }
 
 .whapp{
-  width: 2.5rem;
+  width: 2rem;
   pointer-events: none;
 }
 
