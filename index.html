@@ -6,10 +6,12 @@
     <script>
         (function () {
             try {
-                if (localStorage.getItem('caeti-theme') === 'light') {
+                if (localStorage.getItem('caeti-theme') !== 'dark') {
                     document.documentElement.setAttribute('data-theme', 'light');
                 }
-            } catch (e) {}
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
         })();
     </script>
     <meta name="author" content="Ricardohdzm">
@@ -46,7 +48,7 @@
     <a href="#nosotros" class="skip-link">Saltar al contenido</a>
     <nav id="Navbar" class="navbar">
         <a class="navbar-brand" href="#" aria-label="Navigate to the homepage">
-            <img src="assets/img/logos/logo3.png" class="navicon navicon-dark" alt="CAE-TI">
+            <img src="assets/img/logos/logo.png" class="navicon navicon-dark" alt="CAE-TI">
             <img src="assets/img/logos/logo2.png" class="navicon navicon-light" alt="CAE-TI">
         </a>
         <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarSupportedContent">
@@ -214,11 +216,11 @@
 </section>
 
 <div class="theme-toggle" id="themeToggle" role="group" aria-label="Cambiar tema">
-    <button type="button" class="theme-option" id="themeOptionDark" data-value="dark" aria-label="Tema oscuro">
-        <i class="fa-solid fa-moon" aria-hidden="true"></i>
-    </button>
     <button type="button" class="theme-option" id="themeOptionLight" data-value="light" aria-label="Tema claro">
         <i class="fa-solid fa-sun" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="theme-option" id="themeOptionDark" data-value="dark" aria-label="Tema oscuro">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
     </button>
 </div>
 
@@ -229,7 +231,7 @@
 
 <script>
     AOS.init({
-        duration: 2000,
+        duration: 600,
         once: false,
         mirror: true,
     });

@@ -555,6 +555,10 @@ p{
   color: var(--text-accent-2);
 }
 
+:root[data-theme="light"] .caeti .btn-outline:hover{
+  color: var(--on-accent);
+}
+
 .caeti .btn-outline:hover{
   background: var(--accent-2);
   border-color: var(--accent-2);
@@ -1356,7 +1360,7 @@ textarea{
   }
 
   .navbar-collapse {
-    display: none;
+    display: flex;
     position: absolute;
     top: calc(100% + .75rem);
     left: 0;
@@ -1370,10 +1374,18 @@ textarea{
     box-shadow: 0 12px 30px rgba(4, 10, 20, .4);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity .18s ease, transform .18s ease, visibility .18s, background-color .3s ease, border-color .3s ease, color .3s ease;
   }
 
   .navbar-collapse.open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .navbar-nav {
