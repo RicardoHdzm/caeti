@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('caeti-theme') !== 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+    <meta name="author" content="Ricardohdzm">
+    <meta name="description" content="CAE Tecnologías de la Información ofrece soluciones innovadoras en gestión de datos, inteligencia analítica, ciberseguridad e infraestructura inteligente para empresas y gobiernos.">
+    <meta name="keywords" content="CAE-TI, gestión de datos, inteligencia analítica, ciberseguridad, infraestructura inteligente, tecnología, innovación, soluciones tecnológicas">
+    <meta name="robots" content="index, follow">
+
+    <title>CAE Tecnologías de la Información - Soluciones Innovadoras en Gestión de Datos</title>
+
+    <meta property="og:title" content="CAE Tecnologías de la Información - Soluciones Innovadoras en Gestión de Datos">
+    <meta property="og:description" content="Descubre cómo CAE-TI transforma datos en información valiosa mediante soluciones en inteligencia analítica, ciberseguridad e infraestructura inteligente.">
+    <meta property="og:image" content="https://caeti.com.mx/assets/img/logos/meta.png">
+    <meta property="og:url" content="https://caeti.com.mx/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CAE Tecnologías de la Información - Soluciones Innovadoras en Gestión de Datos">
+    <meta name="twitter:description" content="Transformamos datos en información estratégica con soluciones en inteligencia analítica, ciberseguridad e infraestructura inteligente.">
+    <meta name="twitter:image" content="https://caeti.com.mx/assets/img/logos/meta.png">
+
+    <link rel="icon" href="assets/img/logos/favicon.png" type="image/x-icon">
+    <link rel="canonical" href="https://caeti.com.mx/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3cd9aa6fad.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <a href="#nosotros" class="skip-link">Saltar al contenido</a>
+    <nav id="Navbar" class="navbar">
+        <a class="navbar-brand" href="#" aria-label="Navigate to the homepage">
+            <img src="assets/img/logos/logo.png" class="navicon navicon-dark" alt="CAE-TI">
+            <img src="assets/img/logos/logo2.png" class="navicon navicon-light" alt="CAE-TI">
+        </a>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarSupportedContent">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<section id="home" class="caeti">
+    <video playsinline autoplay muted loop poster="assets/img/backgrounds/home-poster.jpg">
+        <source src="assets/video/home.mp4" type="video/mp4"></source>
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="home-text" data-aos="fade-up">
+        <h1 class="visually-hidden">CAE Tecnologías de la Información: Gestión de Datos, Inteligencia Analítica e Infraestructura Inteligente</h1>
+        <span class="eyebrow">Datos · Analítica · Ciberseguridad · Infraestructura</span>
+        <img src="assets/img/logos/logo.png" class="logo-home logo-home-dark" alt="CAE-TI">
+        <img src="assets/img/logos/logo2.png" class="logo-home logo-home-light" alt="CAE-TI">
+        <p>
+            En <b>CAE-Ti</b> estamos comprometidos con el avance y la mejora de la transformación digital de su empresa, procurando que sus datos se conviertan en información clave para la toma de decisiones estratégicas. Nuestro objetivo es ayudarle a mantenerse al día con las innovaciones tecnológicas y optimizar su experiencia.
+        </p>
+        <div class="hero-actions">
+            <a href="#servicios"><button class="btn">Servicios</button></a>
+            <a href="#contacto"><button class="btn btn-outline">Contacto</button></a>
+        </div>
+    </div>
+    <a href="#nosotros" class="scroll-cue" aria-label="Explorar más">
+        <span>Explorar</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+</section>
+
+<section id="nosotros" class="section-n">
+    <div class="section-inner">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h3>CAE Tecnologías de la Información</h3><h2><span class="gradient-text">Nuestros Valores</span></h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-card" data-aos="fade-up">
+                <div class="text-center"><span class="value-icon"><i class="fa-solid fa-bullseye"></i></span><h3>MISIÓN</h3></div>
+                <p>
+                    Somos una empresa dedicada a implementar soluciones innovadoras para la gestión de grandes volúmenes de datos; apoyando al gobierno e iniciativa privada en la generación de información significativa y de valor, mediante un equipo de profesionales altamente competitivo en negocios y tecnología.
+                </p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="text-center"><span class="value-icon"><i class="fa-solid fa-globe"></i></span><h3>VISIÓN</h3></div>
+                <p>
+                    Ser una empresa tecnológica competitiva que ofrece soluciones de valor para nuestros clientes, reconocida en México y globalmente por las soluciones tecnológicas que entregamos, generando relaciones duraderas y de largo plazo con nuestros clientes, para convertirnos en su socio de confianza en forma ética y satisfactoria en conjunto con nuestros proveedores y equipo de trabajo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="servicios" class="section-n">
+    <div class="section-inner">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h3>Conoce Nuestros</h3><h2><span class="gradient-text">Servicios</span></h2>
+        </div>
+
+        <div class="services-grid" data-aos="fade-up">
+
+            <div class="card h-100">
+              <span class="card-index">01</span>
+              <span class="card-icon"><i class="fa-solid fa-microchip"></i></span>
+              <div class="card-body">
+                <p class="card-tittle">Dispositivos y Ecosistema Digital</p>
+                <p class="card-text">Enfocado en la implementación de soluciones avanzadas de Big Data e inteligencia empresarial</p>
+            </div>
+        </div>
+
+        <div class="card h-100">
+          <span class="card-index">02</span>
+          <span class="card-icon"><i class="fa-solid fa-comments"></i></span>
+          <div class="card-body">
+            <p class="card-tittle">Consultoría</p>
+            <p class="card-text">Análisis Data-Oriented avanzado, ciberseguridad, gestión inteligente de almacenamiento y soluciones de manejo y seguridad de la información escalables.</p>
+        </div>
+    </div>
+
+    <div class="card h-100">
+      <span class="card-index">03</span>
+      <span class="card-icon"><i class="fa-solid fa-server"></i></span>
+      <div class="card-body">
+        <p class="card-tittle">Infraestructura Inteligente</p>
+        <p class="card-text">On Prem, Cloud e Híbrida, almacenamiento de alto rendimiento, soluciones de manejo de identidades, seguridad, disponibilidad y recuperabilidad de información diseñadas para obtener una máxima eficiencia.</p>
+    </div>
+</div>
+
+<div class="card h-100">
+  <span class="card-index">04</span>
+  <span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span>
+  <div class="card-body">
+    <p class="card-tittle">Inteligencia Analítica & Ciberseguridad</p>
+    <p class="card-text">Consultoría en modelos avanzados de IA, algoritmos predictivos junto con soluciones de seguridad digital de última generación.</p>
+</div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="contacto" class="section-n">
+    <div class="section-inner contact-grid">
+        <div class="contact-info" data-aos="fade-up">
+            <h3>Podemos</h3><h2><span class="gradient-text">Ayudarle</span></h2>
+            <p>
+                Hagamos sinergia, permítanos ser un aliado estratégico para hacer crecer su empresa, aportando valor a través de nuestra experiencia.
+            </p>
+            <div class="info">
+                <div class="info-row">
+                    <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <div><b>Correo Electrónico</b><br>contacto@caeti.com.mx</div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                    <div><b>Teléfono</b><br>(55) 4165 5959</div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <div><b>Dirección</b><br>CP. 11510 Miguel Hidalgo, Ciudad de México</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-col" data-aos="fade-up" data-aos-delay="150">
+            <form action="enviar_correo.php" method="POST">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label class="visually-hidden" for="name">Nombre</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="visually-hidden" for="company">Empresa</label>
+                        <input type="text" class="form-control" name="company" id="company" placeholder="Empresa" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="visually-hidden" for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="visually-hidden" for="phone">Teléfono</label>
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono" required>
+                    </div>
+                    <div class="form-field form-field-full">
+                        <label class="visually-hidden" for="mensaje">Mensaje</label>
+                        <textarea class="form-control form-border" name="mensaje" id="mensaje" placeholder="Cuentanos un poco" rows="8" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" value="Enviar" class="btn btn-accent2">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="copy text-center">
+    © 2025 CAE-TI. Todos los Derechos Reservados. Diseñado por JRHM.STUDIO
+</section>
+
+<div class="theme-toggle" id="themeToggle" role="group" aria-label="Cambiar tema">
+    <button type="button" class="theme-option" id="themeOptionLight" data-value="light" aria-label="Tema claro">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="theme-option" id="themeOptionDark" data-value="dark" aria-label="Tema oscuro">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+</div>
+
+<a href="tel:5541655959" aria-label="Llamar por teléfono"><button id="whappBtn" title="Llamar"><i class="fa-solid fa-phone" aria-hidden="true"></i></button></a>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 600,
+        once: false,
+        mirror: true,
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navToggle = document.getElementById('navbarToggle');
+        const navCollapse = document.getElementById('navbarSupportedContent');
+        const navToggleIcon = navToggle.querySelector('i');
+
+        function setMenuState(isOpen) {
+            navCollapse.classList.toggle('open', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            navToggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            document.body.classList.toggle('menu-open', isOpen);
+        }
+
+        function closeMenu() {
+            setMenuState(false);
+        }
+
+        navToggle.addEventListener('click', function () {
+            setMenuState(!navCollapse.classList.contains('open'));
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!navCollapse.classList.contains('open')) return;
+            if (navCollapse.contains(event.target) || navToggle.contains(event.target)) return;
+            closeMenu();
+        });
+
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                closeMenu();
+            });
+        });
+    });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section"); // Todas las secciones
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link"); // Links del navbar
+
+    function changeActiveNav() {
+      let scrollPosition = window.scrollY + 200; // Ajuste para detectar la sección antes
+
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute("id");
+
+        if (scrollPosition >= top && scrollPosition < top + height) {
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+          }
+      });
+      }
+  });
+  }
+
+  window.addEventListener("scroll", changeActiveNav);
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const root = document.documentElement;
+        const optionDark = document.getElementById('themeOptionDark');
+        const optionLight = document.getElementById('themeOptionLight');
+
+        function applyThemeUI() {
+            const isLight = root.getAttribute('data-theme') === 'light';
+            optionDark.setAttribute('aria-pressed', isLight ? 'false' : 'true');
+            optionLight.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        }
+
+        applyThemeUI();
+
+        function setTheme(value) {
+            if (value === 'light') {
+                root.setAttribute('data-theme', 'light');
+            } else {
+                root.removeAttribute('data-theme');
+            }
+            try { localStorage.setItem('caeti-theme', value); } catch (e) {}
+            applyThemeUI();
+        }
+
+        optionDark.addEventListener('click', function () { setTheme('dark'); });
+        optionLight.addEventListener('click', function () { setTheme('light'); });
+    });
+</script>
+
+</body>
+</html>
