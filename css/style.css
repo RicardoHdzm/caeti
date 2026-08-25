@@ -667,7 +667,7 @@ form .btn {
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 560px));
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 560px));
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
@@ -1099,15 +1099,17 @@ textarea{
   }
 
   .eyebrow {
-    font-size: .5rem;
+    font-size: clamp(.42rem, 2.5vw, .8rem);
     letter-spacing: 0;
-    gap: .25rem;
-    padding: .4rem .5rem;
+    gap: 1.2vw;
+    padding: .45rem 1.9vw;
   }
 
   .eyebrow::before {
-    width: .3rem;
-    height: .3rem;
+    width: 1.2vw;
+    height: 1.2vw;
+    min-width: .26rem;
+    min-height: .26rem;
   }
 
   .logo-home{
@@ -1143,20 +1145,6 @@ textarea{
   }
 
 }
-
-@media only screen and (max-width: 340px) {
-  .eyebrow {
-    font-size: .44rem;
-    gap: .2rem;
-    padding: .35rem .4rem;
-  }
-
-  .eyebrow::before {
-    width: .26rem;
-    height: .26rem;
-  }
-}
-
 
 .card{
   position: relative;
