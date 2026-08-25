@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('caeti-theme') === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {}
+        })();
+    </script>
     <meta name="author" content="Ricardohdzm">
     <meta name="description" content="CAE Tecnologías de la Información ofrece soluciones innovadoras en gestión de datos, inteligencia analítica, ciberseguridad e infraestructura inteligente para empresas y gobiernos.">
     <meta name="keywords" content="CAE-TI, gestión de datos, inteligencia analítica, ciberseguridad, infraestructura inteligente, tecnología, innovación, soluciones tecnológicas">
@@ -37,7 +46,8 @@
     <a href="#nosotros" class="skip-link">Saltar al contenido</a>
     <nav id="Navbar" class="navbar">
         <a class="navbar-brand" href="#" aria-label="Navigate to the homepage">
-            <img src="assets/img/logos/logo3.png" class="navicon" alt="CAE-TI">
+            <img src="assets/img/logos/logo3.png" class="navicon navicon-dark" alt="CAE-TI">
+            <img src="assets/img/logos/logo2.png" class="navicon navicon-light" alt="CAE-TI">
         </a>
         <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarSupportedContent">
             <i class="fa-solid fa-bars"></i>
@@ -60,7 +70,8 @@
     <div class="home-text" data-aos="fade-up">
         <h1 class="visually-hidden">CAE Tecnologías de la Información: Gestión de Datos, Inteligencia Analítica e Infraestructura Inteligente</h1>
         <span class="eyebrow">Datos · Analítica · Ciberseguridad · Infraestructura</span>
-        <img src="assets/img/logos/logo.png" class="logo-home" alt="CAE-TI">
+        <img src="assets/img/logos/logo.png" class="logo-home logo-home-dark" alt="CAE-TI">
+        <img src="assets/img/logos/logo2.png" class="logo-home logo-home-light" alt="CAE-TI">
         <p>
             En <b>CAE-Ti</b> estamos comprometidos con el avance y la mejora de la transformación digital de su empresa, procurando que sus datos se conviertan en información clave para la toma de decisiones estratégicas. Nuestro objetivo es ayudarle a mantenerse al día con las innovaciones tecnológicas y optimizar su experiencia.
         </p>
@@ -202,7 +213,16 @@
     © 2025 CAE-TI. Todos los Derechos Reservados. Diseñado por JRHM.STUDIO
 </section>
 
-<a href="tel:5541655959" aria-label="Llamar por WhatsApp"><button id="whappBtn" title="Open WhatsApp"><img class="whapp" src="assets/img/logos/whatsapp.png" alt=""></button></a>
+<div class="theme-toggle" id="themeToggle" role="group" aria-label="Cambiar tema">
+    <button type="button" class="theme-option" id="themeOptionDark" data-value="dark" aria-label="Tema oscuro">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="theme-option" id="themeOptionLight" data-value="light" aria-label="Tema claro">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+    </button>
+</div>
+
+<a href="tel:5541655959" aria-label="Llamar por teléfono"><button id="whappBtn" title="Llamar"><i class="fa-solid fa-phone" aria-hidden="true"></i></button></a>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -239,11 +259,6 @@
         document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
                 closeMenu();
-                const target = document.querySelector(link.getAttribute('href'));
-                if (!target) return;
-                target.querySelectorAll('[data-aos]').forEach(function (el) {
-                    el.classList.remove('aos-animate');
-                });
             });
         });
     });
@@ -275,6 +290,35 @@
 
   window.addEventListener("scroll", changeActiveNav);
 });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const root = document.documentElement;
+        const optionDark = document.getElementById('themeOptionDark');
+        const optionLight = document.getElementById('themeOptionLight');
+
+        function applyThemeUI() {
+            const isLight = root.getAttribute('data-theme') === 'light';
+            optionDark.setAttribute('aria-pressed', isLight ? 'false' : 'true');
+            optionLight.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        }
+
+        applyThemeUI();
+
+        function setTheme(value) {
+            if (value === 'light') {
+                root.setAttribute('data-theme', 'light');
+            } else {
+                root.removeAttribute('data-theme');
+            }
+            try { localStorage.setItem('caeti-theme', value); } catch (e) {}
+            applyThemeUI();
+        }
+
+        optionDark.addEventListener('click', function () { setTheme('dark'); });
+        optionLight.addEventListener('click', function () { setTheme('light'); });
+    });
 </script>
 
 </body>
