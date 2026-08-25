@@ -481,7 +481,7 @@ p{
   align-items: center;
   justify-content: space-between;
   padding: .65rem 1rem .65rem 1.5rem;
-  z-index: 3;
+  z-index: 150;
 }
 
 /* Glass background lives on a separate layer so it doesn't become the
@@ -1358,41 +1358,68 @@ textarea{
 
   .navbar-toggle {
     display: flex;
+    position: relative;
+    z-index: 1;
+  }
+
+  body.menu-open {
+    overflow: hidden;
   }
 
   .navbar-collapse {
+    position: fixed;
+    inset: 0;
     display: flex;
-    position: absolute;
-    top: calc(100% + .75rem);
-    left: 0;
-    right: 0;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
     margin-left: 0;
     background-color: var(--navbar-panel-bg);
-    border: thin solid var(--navbar-border);
-    border-radius: 1.5rem;
-    padding: .5rem 0;
-    box-shadow: 0 12px 30px rgba(4, 10, 20, .4);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-6px);
+    transform: scale(1.03);
     pointer-events: none;
-    transition: opacity .18s ease, transform .18s ease, visibility .18s, background-color .3s ease, border-color .3s ease, color .3s ease;
+    transition: opacity .22s ease, transform .22s ease, visibility .22s, background-color .3s ease;
+  }
+
+  .navbar-collapse::before,
+  .navbar-collapse::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+  }
+
+  .navbar-collapse::before {
+    top: 2rem;
+    left: 2rem;
+    border-top: 2px solid var(--text-light);
+    border-left: 2px solid var(--text-light);
+  }
+
+  .navbar-collapse::after {
+    bottom: 2rem;
+    right: 2rem;
+    border-bottom: 2px solid var(--text-light);
+    border-right: 2px solid var(--text-light);
   }
 
   .navbar-collapse.open {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: scale(1);
     pointer-events: auto;
   }
 
   .navbar-nav {
     flex-direction: column;
-    align-items: stretch;
-    width: 100%;
+    align-items: center;
+    gap: .5rem;
+    width: auto;
   }
 
   .nav-item {
@@ -1402,7 +1429,8 @@ textarea{
 
   .nav-link {
     display: block;
-    padding: 1rem 1.5rem;
+    padding: .75rem 1rem;
+    font-size: 2.25rem!important;
   }
 }
 

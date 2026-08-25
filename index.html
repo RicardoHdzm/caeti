@@ -241,15 +241,22 @@
     document.addEventListener('DOMContentLoaded', function () {
         const navToggle = document.getElementById('navbarToggle');
         const navCollapse = document.getElementById('navbarSupportedContent');
+        const navToggleIcon = navToggle.querySelector('i');
+
+        function setMenuState(isOpen) {
+            navCollapse.classList.toggle('open', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            navToggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            document.body.classList.toggle('menu-open', isOpen);
+        }
 
         function closeMenu() {
-            navCollapse.classList.remove('open');
-            navToggle.setAttribute('aria-expanded', 'false');
+            setMenuState(false);
         }
 
         navToggle.addEventListener('click', function () {
-            const isOpen = navCollapse.classList.toggle('open');
-            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            setMenuState(!navCollapse.classList.contains('open'));
         });
 
         document.addEventListener('click', function (event) {
