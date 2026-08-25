@@ -981,6 +981,19 @@ textarea{
 
 }
 
+@media only screen and (max-width: 340px) {
+  .eyebrow {
+    font-size: .44rem;
+    gap: .2rem;
+    padding: .35rem .4rem;
+  }
+
+  .eyebrow::before {
+    width: .26rem;
+    height: .26rem;
+  }
+}
+
 
 .card{
   position: relative;
